@@ -26,10 +26,8 @@ public class Seminar_task_5 {
             try {
                 if (array[i] == null) throw new RuntimeException("null");
             }
-            catch (Exception ex){
-                if (ex.getMessage() == "null") {
-                    System.out.printf("Элемент с индексом %d содержит null\n", i);
-                }
+            catch (RuntimeException ex){
+                System.out.printf("Элемент с индексом %d содержит null\n", i);
             }
         }
     }
